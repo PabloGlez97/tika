@@ -68,7 +68,6 @@
             <artifactId>maven-pmd-plugin</artifactId>
             <version>3.13.0</version>
             <configuration>
-              <linkXref>true</linkXref>
               <sourceEncoding>utf-8</sourceEncoding>
               <minimumTokens>100</minimumTokens>
               <targetJdk>1.5</targetJdk>
@@ -85,7 +84,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>findbugs-maven-plugin</artifactId>
-            <version>3.0.6-SNAPSHOT</version>
+            <version>3.0.5</version>
             <configuration>
               <xmlOutput>true</xmlOutput>
               <!-- Optional directory to put findbugs xdoc xml report -->
@@ -98,6 +97,7 @@
             <version>3.1.1</version>
             <configuration>
               <encoding>UTF-8</encoding>
+              <configLocation>tika-core/bestPractises.xml</configLocation>
               <failsOnError>false</failsOnError>
               <outputFile>reports/checkstyle.xml</outputFile>
             </configuration>
