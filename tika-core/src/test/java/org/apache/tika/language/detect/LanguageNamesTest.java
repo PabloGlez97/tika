@@ -31,7 +31,9 @@ public class LanguageNamesTest {
 		assertTrue(LanguageNames.equals(languageA, languageB));
 		
 		// TODO verify that "en-Latn" == "en"
-		
+		//String languageLatn = LanguageNames.normalizeName("en-Latn");
+		//String languageEn = LanguageNames.normalizeName("en");
+		//assertTrue(LanguageNames.equals(languageLatn, languageEn));
 		// TODO verify that "en-GB" == "en"???
 	}
 

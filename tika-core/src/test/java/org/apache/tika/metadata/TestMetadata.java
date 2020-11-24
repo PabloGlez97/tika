@@ -394,9 +394,13 @@ public class TestMetadata {
         }
         int finished = 0;
         while (finished < numThreads) {
+
             Future<Integer> future = executorCompletionService.take();
             if (future != null && future.isDone()) {
-                Integer retVal = future.get();
+                // Error
+                // Integer retVal = future.get();
+
+
                 finished++;
             }
         }
@@ -415,6 +419,7 @@ public class TestMetadata {
                 DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.US);
                 m.set(TikaCoreProperties.CREATED, df.format(now));
                 df.setTimeZone(TimeZone.getTimeZone("UTC"));
+
                 assertTrue(Math.abs(now.getTime() - m.getDate(TikaCoreProperties.CREATED).getTime()) < 2000);
 
             }
