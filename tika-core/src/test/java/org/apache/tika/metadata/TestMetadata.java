@@ -573,13 +573,13 @@ public class TestMetadata {
         Metadata m = new Metadata();
         Property p = Property.internalIntegerSequence("test");
 
-        m.add(p, 4);
+        m.add(p, 3);
         assertArrayEquals(
-                new int [] {4},
+                new int [] {3},
                 m.getIntValues(p));
         m.add(p, 7);
         assertArrayEquals(
-                new int [] {4, 7},
+                new int [] {3, 7},
                 m.getIntValues(p));
     }
 
