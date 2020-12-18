@@ -18,13 +18,8 @@ package org.apache.tika.metadata;
 
 //JDK imports
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -38,8 +33,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import aQute.bnd.annotation.metatype.Meta;
 import org.apache.tika.utils.DateUtils;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 //Junit imports
 
@@ -488,4 +486,101 @@ public class TestMetadata {
         m.add("key", "value1");
         assertEquals("key=value1", m.toString());
     }
+
+    @Test
+    public void testGetIntValuesWithNotSeq(){
+        Metadata m= new Metadata();
+        Property p = Property.internalInteger("test");
+        try {
+            m.getIntValues(p);
+            fail();
+        }
+        catch (PropertyTypeException e) {
+            assertEquals("Expected a property of type " + Property.PropertyType.SEQ + ", but received " + Property.PropertyType.SIMPLE,
+                    e.getMessage());
+        }
+    }
+
+    @Test
+    public void testGetIntValuesWithNotInteger() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        Metadata m= new Metadata();
+        Constructor<Property> constructor = Property.class.getDeclaredConstructor(String.class, Boolean.TYPE, Property.PropertyType.class, Property.ValueType.class);
+        constructor.setAccessible(true);
+        Property p = constructor
+                .newInstance("test", true, Property.PropertyType.SEQ, Property.ValueType.BOOLEAN);
+        try {
+            m.getIntValues(p);
+            fail();
+        }
+        catch (PropertyTypeException e) {
+            assertEquals("Expected a property with a " + Property.ValueType.INTEGER + " value, but received a " + Property.ValueType.BOOLEAN,
+                    e.getMessage());
+        }
+    }
+
+    @Test
+    public void testGetIntValues() {
+        Metadata m= new Metadata();
+        Property p = Property.internalIntegerSequence("test");
+
+        assertArrayEquals(
+                new int [] {},
+                m.getIntValues(p));
+
+        m.add(p, 4);
+        assertArrayEquals(
+                new int [] {4},
+                m.getIntValues(p));
+        m.add(p, 7);
+        assertArrayEquals(
+                new int [] {4, 7},
+                m.getIntValues(p));
+    }
+
+    @Test
+    public void testGetValuesInvalidProperty() {
+        Metadata m = new Metadata();
+        Property p;
+        try {
+            p = Property.internalInteger("test");
+            m.getIntValues(p);
+            fail();
+        } catch (PropertyTypeException e) {}
+        try {
+            p = Property.internalInteger("test");
+            m.getIntValues(p);
+            fail();
+        } catch (PropertyTypeException e) {}
+        try {
+            p = Property.internalClosedChoise("test");
+            m.getIntValues(p);
+            fail();
+        } catch (PropertyTypeException e) {}
+    }
+
+    @Test
+    public void testGetIntValuesWithEmptyProperty() {
+        Metadata m = new Metadata();
+        Property p = Property.internalIntegerSequence("test");
+
+        assertArrayEquals(
+                new int[]{},
+                m.getIntValues(p));
+    }
+
+    @Test
+    public void testGetIntValuesWithContent() {
+        Metadata m = new Metadata();
+        Property p = Property.internalIntegerSequence("test");
+
+        m.add(p, 4);
+        assertArrayEquals(
+                new int [] {4},
+                m.getIntValues(p));
+        m.add(p, 7);
+        assertArrayEquals(
+                new int [] {4, 7},
+                m.getIntValues(p));
+    }
+
 }
