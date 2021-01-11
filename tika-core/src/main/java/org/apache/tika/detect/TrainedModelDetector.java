@@ -62,7 +62,7 @@ public abstract class TrainedModelDetector implements Detector {
              * prediction value.
              */
             Iterator<MediaType> iter = MODEL_MAP.keySet().iterator();
-            float threshold = 0.5f;// probability threshold, any value below the
+            float threshold = 0.5f; // probability threshold, any value below the
             // threshold will be considered as
             // MediaType.OCTET_STREAM
             float maxprob = threshold;
@@ -92,7 +92,7 @@ public abstract class TrainedModelDetector implements Detector {
     protected float[] readByteFrequencies(final InputStream input)
             throws IOException {
         ReadableByteChannel inputChannel;
-        // TODO: any reason to avoid closing of input & inputChannel?
+
         try {
             inputChannel = Channels.newChannel(input);
             // long inSize = inputChannel.size();
@@ -133,6 +133,7 @@ public abstract class TrainedModelDetector implements Detector {
 
             return histogram;
         } finally {
+            System.out.println("no");
             // inputChannel.close();
         }
     }

@@ -79,8 +79,8 @@ public class ExternalParsersFactory {
       Parser parser = config.getParser();
       if (parser instanceof CompositeParser) {
          CompositeParser cParser = (CompositeParser)parser;
-         Map<MediaType,Parser> parserMap = cParser.getParsers();
+         Map<MediaType, Parser> parserMap = cParser.getParsers();
       }
-      // TODO
+
    }
 }

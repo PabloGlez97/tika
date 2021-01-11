@@ -19,7 +19,6 @@ package org.apache.tika.utils;
 
 import org.apache.tika.exception.TikaException;
 import org.apache.tika.parser.ParseContext;
-import org.apache.tika.sax.OfflineContentHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
@@ -86,7 +85,8 @@ public class XMLReaderUtils implements Serializable {
         }
 
         @Override
-        public void unparsedEntityDecl(String name, String publicId, String systemId, String notationName) throws SAXException {
+        public void unparsedEntityDecl(String name, String publicId
+                , String systemId, String notationName) throws SAXException {
 
         }
     };
@@ -139,7 +139,7 @@ public class XMLReaderUtils implements Serializable {
         return DEFAULT_MAX_ENTITY_EXPANSIONS;
     }
 
-    //TODO: figure out if the rw lock is any better than a simple lock
+
     private static final ReentrantReadWriteLock SAX_READ_WRITE_LOCK = new ReentrantReadWriteLock();
     private static final ReentrantReadWriteLock DOM_READ_WRITE_LOCK = new ReentrantReadWriteLock();
 
@@ -333,7 +333,8 @@ public class XMLReaderUtils implements Serializable {
         return factory;
     }
 
-    private static void trySetTransformerAttribute(TransformerFactory transformerFactory, String attribute, String value) {
+    private static void trySetTransformerAttribute(TransformerFactory transformerFactory
+            , String attribute, String value) {
         try {
             transformerFactory.setAttribute(attribute, value);
         } catch (SecurityException e) {
@@ -357,7 +358,8 @@ public class XMLReaderUtils implements Serializable {
         }
     }
 
-    private static void trySetSAXFeature(DocumentBuilderFactory documentBuilderFactory, String feature, boolean enabled) {
+    private static void trySetSAXFeature(DocumentBuilderFactory documentBuilderFactory
+            , String feature, boolean enabled) {
         try {
             documentBuilderFactory.setFeature(feature, enabled);
         } catch (Exception e) {
@@ -409,7 +411,8 @@ public class XMLReaderUtils implements Serializable {
      * @throws IOException
      * @throws SAXException
      */
-    public static Document buildDOM(InputStream is, ParseContext context) throws TikaException, IOException, SAXException {
+    public static Document buildDOM(InputStream is, ParseContext context)
+            throws TikaException, IOException, SAXException {
         DocumentBuilder builder = context.get(DocumentBuilder.class);
         PoolDOMBuilder poolBuilder = null;
         if (builder == null) {
@@ -650,8 +653,8 @@ public class XMLReaderUtils implements Serializable {
             // this parser will not be added and will then be gc'd
             boolean success = SAX_PARSERS.offer(parser);
             if (!success) {
-                LOG.warn("SAXParser not taken back into pool.  If you haven't resized the pool, this could " +
-                        "be a sign that there are more calls to 'acquire' than to 'release'");
+                LOG.warn("SAXParser not taken back into pool.  If you haven't resized the pool, this could "
+                        + "be a sign that there are more calls to 'acquire' than to 'release'");
             }
         } finally {
             SAX_READ_WRITE_LOCK.readLock().unlock();
@@ -725,7 +728,7 @@ public class XMLReaderUtils implements Serializable {
                 // continue without log, this is expected in some setups
             } catch (Throwable e) {     // NOSONAR - also catch things like NoClassDefError here
                 // throttle the log somewhat as it can spam the log otherwise
-                if(System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
+                if (System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
                     LOG.warn("SAX Security Manager could not be setup [log suppressed for 5 minutes]", e);
                     LAST_LOG = System.currentTimeMillis();
                 }
@@ -734,10 +737,11 @@ public class XMLReaderUtils implements Serializable {
 
         // separate old version of Xerces not found => use the builtin way of setting the property
         try {
-            factory.setAttribute("http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit", MAX_ENTITY_EXPANSIONS);
+            factory.setAttribute("http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit"
+                    , MAX_ENTITY_EXPANSIONS);
         } catch (IllegalArgumentException e) {     // NOSONAR - also catch things like NoClassDefError here
             // throttle the log somewhat as it can spam the log otherwise
-            if(System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
+            if (System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
                 LOG.warn("SAX Security Manager could not be setup [log suppressed for 5 minutes]", e);
                 LAST_LOG = System.currentTimeMillis();
             }
@@ -764,7 +768,7 @@ public class XMLReaderUtils implements Serializable {
             } catch (Throwable e) {
                 // NOSONAR - also catch things like NoClassDefError here
                 // throttle the log somewhat as it can spam the log otherwise
-                if(System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
+                if (System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
                     LOG.warn("SAX Security Manager could not be setup [log suppressed for 5 minutes]", e);
                     LAST_LOG = System.currentTimeMillis();
                 }
@@ -776,7 +780,7 @@ public class XMLReaderUtils implements Serializable {
             parser.setProperty("http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit", MAX_ENTITY_EXPANSIONS);
         } catch (SAXException e) {     // NOSONAR - also catch things like NoClassDefError here
             // throttle the log somewhat as it can spam the log otherwise
-            if(System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
+            if (System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
                 LOG.warn("SAX Security Manager could not be setup [log suppressed for 5 minutes]", e);
                 LAST_LOG = System.currentTimeMillis();
             }
@@ -788,7 +792,7 @@ public class XMLReaderUtils implements Serializable {
             inputFactory.setProperty("com.ctc.wstx.maxEntityCount", MAX_ENTITY_EXPANSIONS);
         } catch (IllegalArgumentException e) {
             // throttle the log somewhat as it can spam the log otherwise
-            if(System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
+            if (System.currentTimeMillis() > LAST_LOG + TimeUnit.MINUTES.toMillis(5)) {
                 LOG.warn("SAX Security Manager could not be setup [log suppressed for 5 minutes]", e);
                 LAST_LOG = System.currentTimeMillis();
             }
@@ -896,7 +900,8 @@ public class XMLReaderUtils implements Serializable {
         if (!hasSecurityManager) {
             // use the builtin way of setting the property
             try {
-                parser.setProperty("http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit", MAX_ENTITY_EXPANSIONS);
+                parser.setProperty("http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit"
+                        , MAX_ENTITY_EXPANSIONS);
                 canSetJaxPEntity = true;
             } catch (SAXException e) {     // NOSONAR - also catch things like NoClassDefError here
                 // throttle the log somewhat as it can spam the log otherwise
@@ -921,7 +926,7 @@ public class XMLReaderUtils implements Serializable {
 
 
     private static class XercesPoolSAXParser extends PoolSAXParser {
-        public XercesPoolSAXParser(int generation, SAXParser parser) {
+        XercesPoolSAXParser(int generation, SAXParser parser) {
             super(generation, parser);
         }
 
@@ -938,7 +943,7 @@ public class XMLReaderUtils implements Serializable {
     }
 
     private static class Xerces2PoolSAXParser extends PoolSAXParser {
-        public Xerces2PoolSAXParser(int generation, SAXParser parser) {
+        Xerces2PoolSAXParser(int generation, SAXParser parser) {
             super(generation, parser);
         }
 
@@ -961,7 +966,7 @@ public class XMLReaderUtils implements Serializable {
     }
 
     private static class BuiltInPoolSAXParser extends PoolSAXParser {
-        public BuiltInPoolSAXParser(int generation, SAXParser parser) {
+        BuiltInPoolSAXParser(int generation, SAXParser parser) {
             super(generation, parser);
         }
 
@@ -980,7 +985,7 @@ public class XMLReaderUtils implements Serializable {
     private static class UnrecognizedPoolSAXParser extends PoolSAXParser {
         //if unrecognized, try to set all protections
         //and try to reset every time
-        public UnrecognizedPoolSAXParser(int generation, SAXParser parser) {
+        UnrecognizedPoolSAXParser(int generation, SAXParser parser) {
             super(generation, parser);
         }
 

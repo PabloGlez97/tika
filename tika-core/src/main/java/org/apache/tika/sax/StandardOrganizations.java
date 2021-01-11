@@ -22,8 +22,11 @@ import java.util.TreeMap;
 
 /**
  * This class provides a collection of the most important technical standard organizations.
- * The collection of standard organizations has been obtained from <a href="https://en.wikipedia.org/wiki/List_of_technical_standard_organisations">Wikipedia</a>.
- * Currently, the list is composed of the most important international standard organizations, the regional standard organizations (i.e., Africa, Americas, Asia Pacific, Europe, and Middle East), and British and American standard organizations among the national-based ones.
+ * The collection of standard organizations has been obtained from
+ * <a href="https://en.wikipedia.org/wiki/List_of_technical_standard_organisations">Wikipedia</a>.
+ * Currently, the list is composed of the most important international standard organizations,
+ * the regional standard organizations (i.e., Africa, Americas, Asia Pacific, Europe, and Middle East),
+ * and British and American standard organizations among the national-based ones.
  *
  */
 public class StandardOrganizations {
@@ -35,7 +38,8 @@ public class StandardOrganizations {
 	    organizations.put("3GPP", "3rd Generation Partnership Project");
 	    organizations.put("3GPP2", "3rd Generation Partnership Project 2");
 	    organizations.put("Accellera", "Accellera Organization");
-	    organizations.put("A4L", "Access for Learning Community (formerly known as the Schools Interoperability Framework)");
+	    organizations.put("A4L"
+				, "Access for Learning Community (formerly known as the Schools Interoperability Framework)");
 	    organizations.put("AES", "Audio Engineering Society");
 	    organizations.put("AIIM", "Association for Information and Image Management");
 	    organizations.put("ASAM", "Association for Automation and Measuring Systems - Automotive technology");

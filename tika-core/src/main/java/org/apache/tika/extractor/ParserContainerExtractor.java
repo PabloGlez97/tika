@@ -86,7 +86,7 @@ public class ParserContainerExtractor implements ContainerExtractor {
         }
     }
 
-    private class RecursiveParser extends AbstractParser {
+    private final class RecursiveParser extends AbstractParser {
 
         private final ContainerExtractor extractor;
 

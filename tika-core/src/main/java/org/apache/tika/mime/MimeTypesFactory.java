@@ -179,9 +179,9 @@ public class MimeTypesFactory {
         String customMimesPath = System.getProperty(CUSTOM_MIMES_SYS_PROP);
         if(customMimesPath != null){
             File externalFile = new File(customMimesPath);
-            if(!externalFile.exists())
+            if(!externalFile.exists()) {
                 throw new IOException(
-                        "Specified custom mimetypes file not found: " + customMimesPath);
+                        "Specified custom mimetypes file not found: " + customMimesPath); }
             URL externalURL = externalFile.toURI().toURL();
             urls.add(externalURL);
         }

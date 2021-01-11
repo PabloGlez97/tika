@@ -19,7 +19,6 @@ package org.apache.tika.detect;
 import java.util.Collection;
 import java.util.List;
 
-import javax.imageio.spi.ServiceRegistry;
 
 import org.apache.tika.config.ServiceLoader;
 import org.apache.tika.mime.MimeTypes;
@@ -61,7 +60,7 @@ public class DefaultDetector extends CompositeDetector {
         return detectors;
     }
 
-    private transient final ServiceLoader loader;
+    private final transient  ServiceLoader loader;
 
     public DefaultDetector(MimeTypes types, ServiceLoader loader,
                            Collection<Class<? extends Detector>> excludeDetectors) {

@@ -502,9 +502,11 @@ public class TestMetadata {
     }
 
     @Test
-    public void testGetIntValuesWithNotInteger() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+    public void testGetIntValuesWithNotInteger() throws NoSuchMethodException, IllegalAccessException
+            , InvocationTargetException, InstantiationException {
         Metadata m= new Metadata();
-        Constructor<Property> constructor = Property.class.getDeclaredConstructor(String.class, Boolean.TYPE, Property.PropertyType.class, Property.ValueType.class);
+        Constructor<Property> constructor = Property.class.getDeclaredConstructor(String.class, Boolean.TYPE,
+                Property.PropertyType.class, Property.ValueType.class);
         constructor.setAccessible(true);
         Property p = constructor
                 .newInstance("test", true, Property.PropertyType.SEQ, Property.ValueType.BOOLEAN);
@@ -513,7 +515,8 @@ public class TestMetadata {
             fail();
         }
         catch (PropertyTypeException e) {
-            assertEquals("Expected a property with a " + Property.ValueType.INTEGER + " value, but received a " + Property.ValueType.BOOLEAN,
+            assertEquals("Expected a property with a " + Property.ValueType.INTEGER +
+                            " value, but received a " + Property.ValueType.BOOLEAN,
                     e.getMessage());
         }
     }

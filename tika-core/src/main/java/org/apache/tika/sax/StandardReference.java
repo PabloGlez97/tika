@@ -21,7 +21,7 @@ package org.apache.tika.sax;
  * Class that represents a standard reference.
  *
  */
-public class StandardReference {
+public final class StandardReference {
 	private String mainOrganization;
 	private String separator;
 	private String secondOrganization;

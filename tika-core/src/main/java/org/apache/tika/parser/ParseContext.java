@@ -25,7 +25,7 @@ import javax.xml.parsers.SAXParserFactory;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.transform.Transformer;
 
-import java.io.InputStream;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -35,7 +35,7 @@ import org.apache.tika.utils.XMLReaderUtils;
 import org.xml.sax.SAXNotRecognizedException;
 import org.xml.sax.SAXNotSupportedException;
 import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.DefaultHandler;
+
 
 /**
  * Parse context. Used to pass context information to Tika parsers.

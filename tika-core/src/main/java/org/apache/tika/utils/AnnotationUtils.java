@@ -1,3 +1,4 @@
+
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -16,7 +17,7 @@
  */
 package org.apache.tika.utils;
 
-import org.apache.tika.config.Field;
+
 import org.apache.tika.config.Param;
 import org.apache.tika.config.ParamField;
 import org.apache.tika.config.TikaConfig;
@@ -38,7 +39,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * This class contains utilities for dealing with tika annotations
+ * This class contains utilities for dealing with tika annotations.
  * @since Apache Tika 1.14
  */
 public class AnnotationUtils {

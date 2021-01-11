@@ -26,7 +26,7 @@ import org.xml.sax.ContentHandler;
 import org.xml.sax.helpers.DefaultHandler;
 
 /**
- * Basic factory for creating common types of ContentHandlers
+ * Basic factory for creating common types of ContentHandlers.
  */
 public class BasicContentHandlerFactory implements ContentHandlerFactory {
 

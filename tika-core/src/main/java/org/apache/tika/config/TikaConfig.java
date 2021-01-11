@@ -16,7 +16,7 @@
  */
 package org.apache.tika.config;
 
-import javax.imageio.spi.ServiceRegistry;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -561,7 +561,7 @@ public class TikaConfig {
     }
 
 
-    private static abstract class XmlLoader<CT,T> {
+    private abstract static class XmlLoader<CT, T> {
         protected static final String PARAMS_TAG_NAME = "params";
         abstract boolean supportsComposite();
         abstract String getParentTagName(); // eg parsers
@@ -747,7 +747,7 @@ public class TikaConfig {
         }
 
     }
-    private static class ParserXmlLoader extends XmlLoader<CompositeParser,Parser> {
+    private static final class ParserXmlLoader extends XmlLoader<CompositeParser, Parser> {
 
         private final EncodingDetector encodingDetector;
 
@@ -888,7 +888,7 @@ public class TikaConfig {
         }
 
     }
-    private static class DetectorXmlLoader extends XmlLoader<CompositeDetector,Detector> {
+    private static class DetectorXmlLoader extends XmlLoader<CompositeDetector, Detector> {
         boolean supportsComposite() { return true; }
         String getParentTagName() { return "detectors"; }
         String getLoaderTagName() { return "detector"; }
@@ -970,7 +970,7 @@ public class TikaConfig {
             return created; // No decoration of Detectors
         }
     }
-    private static class TranslatorXmlLoader extends XmlLoader<Translator,Translator> {
+    private static class TranslatorXmlLoader extends XmlLoader<Translator, Translator> {
         boolean supportsComposite() { return false; }
         String getParentTagName() { return null; }
         String getLoaderTagName() { return "translator"; }
@@ -1013,7 +1013,7 @@ public class TikaConfig {
         }        
     }
     
-    private static class ExecutorServiceXmlLoader extends XmlLoader<ConfigurableThreadPoolExecutor,ConfigurableThreadPoolExecutor> {
+    private static class ExecutorServiceXmlLoader extends XmlLoader<ConfigurableThreadPoolExecutor, ConfigurableThreadPoolExecutor> {
         @Override
         ConfigurableThreadPoolExecutor createComposite(
                 Class<? extends ConfigurableThreadPoolExecutor> compositeClass,
@@ -1066,19 +1066,19 @@ public class TikaConfig {
         }
 
         @Override
-        boolean supportsComposite() {return false;}
+        boolean supportsComposite() {return false; }
 
         @Override
-        String getParentTagName() {return null;}
+        String getParentTagName() {return null; }
 
         @Override
-        String getLoaderTagName() {return "executor-service";}
+        String getLoaderTagName() {return "executor-service"; }
 
         @Override
-        boolean isComposite(ConfigurableThreadPoolExecutor loaded) {return false;}
+        boolean isComposite(ConfigurableThreadPoolExecutor loaded) {return false; }
 
         @Override
-        boolean isComposite(Class<? extends ConfigurableThreadPoolExecutor> loadedClass) {return false;}
+        boolean isComposite(Class<? extends ConfigurableThreadPoolExecutor> loadedClass) {return false; }
 
         @Override
         ConfigurableThreadPoolExecutor preLoadOne(

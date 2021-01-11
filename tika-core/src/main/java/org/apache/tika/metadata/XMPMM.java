@@ -25,13 +25,7 @@ public interface XMPMM {
     /** The xmpMM prefix followed by the colon delimiter */
     String PREFIX_ = PREFIX + ":";
 
-    /**
-     * A reference to the resource from which this one is derived.
-     * This should be a minimal reference, in which missing
-     * components can be assumed to be unchanged.
-     * 
-     * TODO This property is of type RessourceRef which is a struct
-     */
+
 //    Property DERIVED_FROM = Property.externalText(PREFIX_ + "DerivedFrom");
 
     /**

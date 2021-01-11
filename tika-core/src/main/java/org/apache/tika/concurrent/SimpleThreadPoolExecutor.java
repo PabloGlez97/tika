@@ -22,7 +22,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Simple Thread Pool Executor
+ * Simple Thread Pool Executor.
  *
  * @since Apache Tika 1.11
  */

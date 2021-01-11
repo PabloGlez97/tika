@@ -41,7 +41,7 @@ public class DefaultProbDetector extends CompositeDetector {
         return detectors;
     }
 
-    private transient final ServiceLoader loader;
+    private final transient ServiceLoader loader;
 
     public DefaultProbDetector(ProbabilisticMimeDetectionSelector sel,
             ServiceLoader loader) {

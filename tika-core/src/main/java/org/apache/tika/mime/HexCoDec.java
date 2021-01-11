@@ -60,8 +60,8 @@ public class HexCoDec {
      * @return the decode hex chars as bytes.
      */
     public static byte[] decode(char[] hexChars, int startIndex, int length) {
-        if ((length & 1) != 0)
-            throw new IllegalArgumentException("Length must be even");
+        if ((length & 1) != 0) {
+            throw new IllegalArgumentException("Length must be even"); }
 
         byte[] result = new byte[length / 2];
         for (int j = 0; j < result.length; j++) {

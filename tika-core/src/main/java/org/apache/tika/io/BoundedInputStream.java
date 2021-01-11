@@ -29,7 +29,7 @@ import java.io.InputStream;
 public class BoundedInputStream extends InputStream {
 
 
-    private final static int EOF = -1;
+    private static final  int EOF = -1;
     private final long max;
     private final InputStream in;
     private long pos;

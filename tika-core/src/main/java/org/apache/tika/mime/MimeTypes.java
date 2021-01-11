@@ -30,7 +30,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+
 
 import javax.xml.namespace.QName;
 
@@ -575,7 +575,7 @@ public final class MimeTypes implements Detector, Serializable {
     }
 
     private static MimeTypes DEFAULT_TYPES = null;
-    private static Map<ClassLoader,MimeTypes> CLASSLOADER_SPECIFIC_DEFAULT_TYPES =
+    private static Map<ClassLoader, MimeTypes> CLASSLOADER_SPECIFIC_DEFAULT_TYPES =
             new HashMap<ClassLoader, MimeTypes>();
 
     /**

@@ -28,7 +28,7 @@ import org.apache.tika.exception.TikaException;
 
 public class ExceptionUtils {
 
-    private final static Pattern MSG_PATTERN = Pattern.compile(":[^\r\n]+");
+    private static final  Pattern MSG_PATTERN = Pattern.compile(":[^\r\n]+");
 
     /**
      * Simple util to get stack trace.

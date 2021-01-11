@@ -334,7 +334,9 @@ public class XHTMLContentHandler extends SafeContentHandler {
     
     @Override
     protected boolean isInvalid(int ch) {
-        if(super.isInvalid(ch)) return true;
+        if(super.isInvalid(ch)) {
+            return true;
+        }
         // These control chars are  invalid in XHTML.
         if(0x7F <= ch && ch <=0x9F) {
             return true;

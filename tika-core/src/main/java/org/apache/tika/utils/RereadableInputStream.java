@@ -106,7 +106,7 @@ public class RereadableInputStream extends InputStream {
     private boolean closeOriginalStreamOnClose = true;
 
 
-    // TODO: At some point it would be better to replace the current approach
+
     // (specifying the above) with more automated behavior.  The stream could
     // keep the original stream open until EOF was reached.  For example, if:
     //
@@ -178,7 +178,7 @@ public class RereadableInputStream extends InputStream {
             // Force read to end of stream to fill store with any
             // remaining bytes from original stream.
             while(read() != -1) {
-                // empty loop
+                System.out.println("empty loop");
             }
         }
 

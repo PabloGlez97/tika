@@ -25,7 +25,7 @@ import java.util.Map;
 
 /**
  * This class stores metdata for {@link Field} annotation are used to map them
- * to {@link Param} at runtime
+ * to {@link Param} at runtime.
  *
  * @since Apache Tika 1.14
  */
@@ -36,8 +36,7 @@ public class ParamField {
     //NOTE: since (primitive type) is NOT AssignableFrom (BoxedType),
     // we just use boxed type for everything!
     // Example : short.class.isAssignableFrom(Short.class) ? false
-    private static final Map<Class<?>, Class<?>> PRIMITIVE_MAP
-            = new HashMap<Class<?>, Class<?>>(){{
+    private static final Map<Class<?>, Class<?>> PRIMITIVE_MAP = new HashMap<Class<?>, Class<?>>(){{
         put(int.class, Integer.class);
         put(short.class, Short.class);
         put(boolean.class, Boolean.class);

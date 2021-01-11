@@ -13,7 +13,8 @@ package org.apache.tika.metadata; /*
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */ import org.apache.tika.metadata.Metadata; import org.apache.tika.metadata.Property; public interface 
+ */
+public interface
 RTFMetadata {
     public static final String PREFIX_RTF_META = "rtf_meta";
     

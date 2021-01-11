@@ -55,11 +55,11 @@ public interface TikaCoreProperties {
      */
     public enum EmbeddedResourceType {
         INLINE, //image that is intended to be displayed in a rendering of the file
-        ATTACHMENT,//standard attachment as in email
+        ATTACHMENT, //standard attachment as in email
         MACRO, //any code that is intended to be run by the application
         METADATA, //e.g. xmp, xfa
-        FONT,//embedded font files
-        THUMBNAIL;//TODO: set this in parsers that handle thumbnails
+        FONT, //embedded font files
+        THUMBNAIL;
     };
 
     /**

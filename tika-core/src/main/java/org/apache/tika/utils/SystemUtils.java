@@ -17,7 +17,7 @@
 package org.apache.tika.utils;
 
 /**
- * Copied from commons-lang to avoid requiring the dependency
+ * Copied from commons-lang to avoid requiring the dependency.
  */
 public class SystemUtils {
 

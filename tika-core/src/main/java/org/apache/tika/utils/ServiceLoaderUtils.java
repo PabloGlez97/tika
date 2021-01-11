@@ -23,7 +23,7 @@ import java.util.List;
 import org.apache.tika.config.ServiceLoader;
 
 /**
- * Service Loading and Ordering related utils
+ * Service Loading and Ordering related utils.
  */
 public class ServiceLoaderUtils {
     /**

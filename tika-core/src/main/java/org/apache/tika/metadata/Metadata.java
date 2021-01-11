@@ -505,7 +505,7 @@ public class Metadata implements CreativeCommons, Geographic, HttpHeaders,
 
     public int hashCode() {
         int h = 0;
-        for (Iterator<Entry<String,String[]>> i = metadata.entrySet().iterator();
+        for (Iterator<Entry<String, String[]>> i = metadata.entrySet().iterator();
              i.hasNext();) {
             h += getMetadataEntryHashCode(i.next());
         }

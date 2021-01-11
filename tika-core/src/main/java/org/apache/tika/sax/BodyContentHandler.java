@@ -23,7 +23,7 @@ import org.apache.tika.sax.xpath.Matcher;
 import org.apache.tika.sax.xpath.MatchingContentHandler;
 import org.apache.tika.sax.xpath.XPathParser;
 import org.xml.sax.ContentHandler;
-import org.xml.sax.SAXException;
+
 
 /**
  * Content handler decorator that only passes everything inside

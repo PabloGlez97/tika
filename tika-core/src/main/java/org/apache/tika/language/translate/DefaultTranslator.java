@@ -33,7 +33,7 @@ import org.apache.tika.exception.TikaException;
  * @since Apache Tika 1.6
  */
 public class DefaultTranslator implements Translator {
-    private transient final ServiceLoader loader;
+    private final transient ServiceLoader loader;
 
     public DefaultTranslator(ServiceLoader loader) {
         this.loader = loader;

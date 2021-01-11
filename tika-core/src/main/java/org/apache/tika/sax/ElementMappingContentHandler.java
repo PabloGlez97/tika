@@ -105,13 +105,13 @@ public class ElementMappingContentHandler extends ContentHandlerDecorator {
          * will be deleted from SAX stream
          */
         public TargetElement(QName mappedTagName) {
-            this(mappedTagName, Collections.<QName,QName>emptyMap());
+            this(mappedTagName, Collections.<QName, QName>emptyMap());
         }
 
         /** A shortcut that automatically creates the QName object */
         public TargetElement(String mappedTagURI, String mappedTagLocalName) {
             this(mappedTagURI, mappedTagLocalName,
-                    Collections.<QName,QName>emptyMap());
+                    Collections.<QName, QName>emptyMap());
         }
 
         public QName getMappedTagName() {

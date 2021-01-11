@@ -16,7 +16,7 @@
  */
 package org.apache.tika.sax;
 
-import javax.xml.transform.sax.TransformerHandler;
+
 
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;

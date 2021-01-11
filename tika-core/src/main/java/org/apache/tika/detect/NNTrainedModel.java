@@ -22,26 +22,26 @@ public class NNTrainedModel extends TrainedModel {
 	private int numOfInputs;
 	private int numOfHidden;
 	private int numOfOutputs;
-	private float[][] Theta1, Theta2;
-
+	private float[][] Theta1;
+	private float[][] Theta2;
 	public NNTrainedModel(final int nInput, final int nHidden,
-			final int nOutput, final float[] nn_params) {
+			final int nOutput, final float[] nnParams) {
 		this.numOfInputs = nInput;
 		this.numOfHidden = nHidden;
 		this.numOfOutputs = nOutput;
 		this.Theta1 = new float[numOfHidden][numOfInputs + 1];
 		this.Theta2 = new float[numOfOutputs][numOfHidden + 1];
-		populateThetas(nn_params);
+		populateThetas(nnParams);
 	}
 
 	// convert the vector params to the 2 thetas.
-	private void populateThetas(final float[] nn_params) {
+	private void populateThetas(final float[] nnParams) {
 		int m = this.Theta1.length;
 		int n = this.Theta1[0].length;
 		int i, j, k = 0;
 		for (i = 0; i < n; i++) {
 			for (j = 0; j < m; j++) {
-				this.Theta1[j][i] = nn_params[k];
+				this.Theta1[j][i] = nnParams[k];
 				k++;
 			}
 		}
@@ -50,7 +50,7 @@ public class NNTrainedModel extends TrainedModel {
 		n = this.Theta2[0].length;
 		for (i = 0; i < n; i++) {
 			for (j = 0; j < m; j++) {
-				this.Theta2[j][i] = nn_params[k];
+				this.Theta2[j][i] = nnParams[k];
 				k++;
 			}
 		}
@@ -73,7 +73,7 @@ public class NNTrainedModel extends TrainedModel {
 		int i, j;
 		int m = this.Theta1.length;
 		int n = this.Theta1[0].length;
-		float[] hh = new float[m + 1];// hidden unit summation
+		float[] hh = new float[m + 1]; // hidden unit summation
 		hh[0] = 1;
 		for (i = 0; i < m; i++) {
 			double h = 0;

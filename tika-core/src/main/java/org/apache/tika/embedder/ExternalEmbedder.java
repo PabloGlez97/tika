@@ -527,8 +527,8 @@ public class ExternalEmbedder implements Embedder {
             int result = process.waitFor();
 
             for (int err : errorValue) {
-                if (result == err)
-                    return false;
+                if (result == err) {
+                    return false; }
             }
             return true;
         } catch (IOException e) {

@@ -28,7 +28,7 @@ import java.nio.file.Paths;
 import java.util.Map;
 
 /**
- * Factory for an AutoDetectParser
+ * Factory for an AutoDetectParser.
  */
 public class AutoDetectParserFactory extends ParserFactory {
 

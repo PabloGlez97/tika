@@ -23,7 +23,7 @@ import java.util.concurrent.FutureTask;
 import org.apache.tika.parser.ParseContext;
 
 /**
- * Utility Class for Concurrency in Tika
+ * Utility Class for Concurrency in Tika.
  *
  * @since Apache Tika 1.11
  */
@@ -42,13 +42,12 @@ public class ConcurrentUtils {
         
         Future future = null;
         ExecutorService executorService = context.get(ExecutorService.class);
-        if(executorService == null) {
+        if (executorService == null) {
             FutureTask task = new FutureTask<>(runnable, null);
             Thread thread = new Thread(task, "Tika Thread");
             thread.start();
             future = task;
-        }
-        else {
+        } else {
             future = executorService.submit(runnable);
         }
         

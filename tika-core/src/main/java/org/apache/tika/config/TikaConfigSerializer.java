@@ -241,7 +241,7 @@ public class TikaConfigSerializer {
         boolean outputParser = true;
         List<Parser> children = Collections.emptyList();
         if (mode == Mode.CURRENT && parser instanceof DefaultParser) {
-            // Only output the parser, not the children
+            System.out.println("Only output the parser, not the children");
         } else if (parser instanceof CompositeParser) {
             children = ((CompositeParser)parser).getAllComponentParsers();
             // Special case for a naked composite

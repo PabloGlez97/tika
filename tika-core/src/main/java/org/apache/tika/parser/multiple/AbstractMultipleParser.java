@@ -40,7 +40,7 @@ import org.apache.tika.mime.MediaTypeRegistry;
 import org.apache.tika.parser.AbstractParser;
 import org.apache.tika.parser.ParseContext;
 import org.apache.tika.parser.Parser;
-import org.apache.tika.parser.ParserDecorator;
+
 import org.apache.tika.sax.ContentHandlerFactory;
 import org.apache.tika.utils.ParserUtils;
 import org.xml.sax.ContentHandler;

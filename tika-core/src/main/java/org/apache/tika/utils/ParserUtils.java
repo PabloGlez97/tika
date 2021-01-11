@@ -31,10 +31,10 @@ import org.apache.tika.parser.ParserDecorator;
  * Helper util methods for Parsers themselves.
  */
 public class ParserUtils {
-    public final static String X_PARSED_BY = "X-Parsed-By"; 
-    public final static Property EMBEDDED_PARSER =
+    public static final  String X_PARSED_BY = "X-Parsed-By";
+    public static final  Property EMBEDDED_PARSER =
             Property.internalText(TikaCoreProperties.TIKA_META_EXCEPTION_PREFIX + "embedded_parser");
-    public final static Property EMBEDDED_EXCEPTION =
+    public static final  Property EMBEDDED_EXCEPTION =
             Property.internalText(TikaCoreProperties.TIKA_META_EXCEPTION_PREFIX + "embedded_exception");
     
     /**
@@ -98,7 +98,9 @@ public class ParserUtils {
      */
     public static InputStream ensureStreamReReadable(InputStream stream, TemporaryResources tmp) throws IOException {
         // If it's re-readable, we're done
-        if (stream instanceof RereadableInputStream) return stream;
+        if (stream instanceof RereadableInputStream) {
+            return stream;
+        }
 
         // Make sure it's a TikaInputStream
         TikaInputStream tstream = TikaInputStream.cast(stream);
@@ -107,7 +109,9 @@ public class ParserUtils {
         }
 
         // If it's factory based, it's ok
-        if (tstream.getInputStreamFactory() != null) return tstream;
+        if (tstream.getInputStreamFactory() != null) {
+            return tstream;
+        }
 
         // Ensure it's file based
         tstream.getFile();

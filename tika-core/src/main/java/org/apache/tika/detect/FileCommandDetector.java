@@ -54,7 +54,7 @@ import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
  */
 public class FileCommandDetector implements Detector {
 
-    //TODO: file has some diff mimes names for some very common mimes
+
     //should we map file mimes to Tika mimes, e.g. text/xml -> application/xml??
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FileCommandDetector.class);

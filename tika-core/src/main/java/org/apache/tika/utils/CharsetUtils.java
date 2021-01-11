@@ -102,7 +102,7 @@ public class CharsetUtils {
                 isSupportedICU = icuCharset.getMethod("isSupported", String.class);
             } catch (Throwable t) {
             }
-            // TODO: would be nice to somehow log that we
+
             // successfully found ICU
         }
     }

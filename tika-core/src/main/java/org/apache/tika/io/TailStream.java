@@ -32,9 +32,7 @@ import java.io.InputStream;
  * buffer. This buffer can then be queried after the whole stream was read. It
  * contains the last bytes read from the original input stream.
  * </p>
- * 
- * @param in the underlying input stream
- * @param tailSize the size of the tail buffer
+ *
  */
 public class TailStream extends FilterInputStream
 {

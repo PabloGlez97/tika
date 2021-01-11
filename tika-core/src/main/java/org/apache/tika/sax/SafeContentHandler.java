@@ -205,7 +205,7 @@ public class SafeContentHandler extends ContentHandlerDecorator {
 
     // Called only from assert
     private boolean verifyStartElement(String name) {
-        // TODO: we could strengthen this to do full
+
         // XTHML validation, eg you shouldn't start p inside
         // another p (but ODF parser, at least, seems to
         // violate this):
@@ -238,7 +238,7 @@ public class SafeContentHandler extends ContentHandlerDecorator {
     public void startElement(
             String uri, String localName, String name, Attributes atts)
             throws SAXException {
-        // TODO: enable this, but some parsers currently
+
         // trip it
         //assert verifyStartElement(name);
         // Look for any invalid characters in attribute values.
@@ -268,7 +268,7 @@ public class SafeContentHandler extends ContentHandlerDecorator {
     @Override
     public void endElement(String uri, String localName, String name)
             throws SAXException {
-        // TODO: enable this, but some parsers currently
+
         // trip it
         //assert verifyEndElement(name);
         super.endElement(uri, localName, name);
@@ -276,7 +276,7 @@ public class SafeContentHandler extends ContentHandlerDecorator {
 
     @Override
     public void endDocument() throws SAXException {
-        // TODO: enable this, but some parsers currently
+
         // trip it
         //assert verifyEndDocument();
         super.endDocument();

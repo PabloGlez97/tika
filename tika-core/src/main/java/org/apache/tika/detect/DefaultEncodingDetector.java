@@ -17,7 +17,7 @@
 
 package org.apache.tika.detect;
 
-import javax.imageio.spi.ServiceRegistry;
+
 import java.util.Collection;
 
 import org.apache.tika.config.ServiceLoader;

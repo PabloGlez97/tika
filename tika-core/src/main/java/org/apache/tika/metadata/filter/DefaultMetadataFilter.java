@@ -17,7 +17,7 @@
 package org.apache.tika.metadata.filter;
 
 import org.apache.tika.config.ServiceLoader;
-import org.apache.tika.mime.MimeTypes;
+
 import org.apache.tika.utils.ServiceLoaderUtils;
 
 import java.util.List;

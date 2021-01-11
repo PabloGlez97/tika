@@ -29,7 +29,7 @@ import org.apache.tika.metadata.TikaCoreProperties;
 
 /**
  * Selector for combining different mime detection results
- *  based on probability
+ *  based on probability.
  */
 public class ProbabilisticMimeDetectionSelector implements Detector {
     private static final long serialVersionUID = 224589862960269260L;
@@ -452,7 +452,7 @@ public class ProbabilisticMimeDetectionSelector implements Detector {
     }
 
     /**
-     * build class for probability parameters setting
+     * build class for probability parameters setting.
      * 
      * 
      */

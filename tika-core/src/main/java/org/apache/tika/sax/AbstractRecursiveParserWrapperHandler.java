@@ -35,26 +35,26 @@ import java.nio.charset.Charset;
  */
 public abstract class AbstractRecursiveParserWrapperHandler extends DefaultHandler implements Serializable {
 
-    public final static Property TIKA_CONTENT = Property.internalText(TikaCoreProperties.TIKA_META_PREFIX+"content");
+    public static final  Property TIKA_CONTENT = Property.internalText(TikaCoreProperties.TIKA_META_PREFIX+"content");
     /**
      * Simple class name of the content handler
      */
-    public final static Property TIKA_CONTENT_HANDLER = Property.internalText(TikaCoreProperties.TIKA_META_PREFIX+"content_handler");
-    public final static Property PARSE_TIME_MILLIS = Property.internalText(TikaCoreProperties.TIKA_META_PREFIX + "parse_time_millis");
-    public final static Property WRITE_LIMIT_REACHED =
+    public static final  Property TIKA_CONTENT_HANDLER = Property.internalText(TikaCoreProperties.TIKA_META_PREFIX+"content_handler");
+    public static final  Property PARSE_TIME_MILLIS = Property.internalText(TikaCoreProperties.TIKA_META_PREFIX + "parse_time_millis");
+    public static final  Property WRITE_LIMIT_REACHED =
             Property.internalBoolean(TikaCoreProperties.TIKA_META_EXCEPTION_PREFIX + "write_limit_reached");
-    public final static Property EMBEDDED_RESOURCE_LIMIT_REACHED =
+    public static final  Property EMBEDDED_RESOURCE_LIMIT_REACHED =
             Property.internalBoolean(TikaCoreProperties.TIKA_META_EXCEPTION_PREFIX + "embedded_resource_limit_reached");
 
     //exception in embedded file
-    public final static Property EMBEDDED_EXCEPTION = ParserUtils.EMBEDDED_EXCEPTION;
+    public static final  Property EMBEDDED_EXCEPTION = ParserUtils.EMBEDDED_EXCEPTION;
     //exception in main file
-    public final static Property CONTAINER_EXCEPTION = Property.internalText(
+    public static final  Property CONTAINER_EXCEPTION = Property.internalText(
             TikaCoreProperties.TIKA_META_EXCEPTION_PREFIX+"runtime");
-    public final static Property EMBEDDED_RESOURCE_PATH =
+    public static final  Property EMBEDDED_RESOURCE_PATH =
             Property.internalText(TikaCoreProperties.TIKA_META_PREFIX+"embedded_resource_path");
 
-    public final static Property EMBEDDED_DEPTH =
+    public static final  Property EMBEDDED_DEPTH =
             Property.internalInteger(TikaCoreProperties.TIKA_META_PREFIX+"embedded_depth");
 
 

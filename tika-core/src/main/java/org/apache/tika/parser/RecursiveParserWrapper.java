@@ -86,37 +86,37 @@ public class RecursiveParserWrapper extends ParserDecorator {
      * @deprecated use {@link org.apache.tika.sax.RecursiveParserWrapperHandler#TIKA_CONTENT}
      */
     @Deprecated
-    public final static Property TIKA_CONTENT = AbstractRecursiveParserWrapperHandler.TIKA_CONTENT;
+    public static final  Property TIKA_CONTENT = AbstractRecursiveParserWrapperHandler.TIKA_CONTENT;
     /**
      * @deprecated use {@link org.apache.tika.sax.RecursiveParserWrapperHandler#PARSE_TIME_MILLIS}
      */
     @Deprecated
-    public final static Property PARSE_TIME_MILLIS = AbstractRecursiveParserWrapperHandler.PARSE_TIME_MILLIS;
+    public static final  Property PARSE_TIME_MILLIS = AbstractRecursiveParserWrapperHandler.PARSE_TIME_MILLIS;
 
     /**
      * @deprecated use {@link org.apache.tika.sax.RecursiveParserWrapperHandler#EMBEDDED_EXCEPTION}
      */
     @Deprecated
-    public final static Property WRITE_LIMIT_REACHED =
+    public static final  Property WRITE_LIMIT_REACHED =
             AbstractRecursiveParserWrapperHandler.WRITE_LIMIT_REACHED;
     /**
      * @deprecated use {@link org.apache.tika.sax.RecursiveParserWrapperHandler#EMBEDDED_RESOURCE_LIMIT_REACHED}
      */
     @Deprecated
-    public final static Property EMBEDDED_RESOURCE_LIMIT_REACHED =
+    public static final  Property EMBEDDED_RESOURCE_LIMIT_REACHED =
             AbstractRecursiveParserWrapperHandler.EMBEDDED_RESOURCE_LIMIT_REACHED;
 
     /**
      * @deprecated use {@link org.apache.tika.sax.RecursiveParserWrapperHandler#EMBEDDED_EXCEPTION}
      */
     @Deprecated
-    public final static Property EMBEDDED_EXCEPTION = AbstractRecursiveParserWrapperHandler.EMBEDDED_EXCEPTION;
+    public static final  Property EMBEDDED_EXCEPTION = AbstractRecursiveParserWrapperHandler.EMBEDDED_EXCEPTION;
 
     /**
      * @deprecated use {@link org.apache.tika.sax.RecursiveParserWrapperHandler#EMBEDDED_RESOURCE_PATH}
      */
     @Deprecated
-    public final static Property EMBEDDED_RESOURCE_PATH = AbstractRecursiveParserWrapperHandler.EMBEDDED_RESOURCE_PATH;
+    public static final  Property EMBEDDED_RESOURCE_PATH = AbstractRecursiveParserWrapperHandler.EMBEDDED_RESOURCE_PATH;
 
     /**
      * @deprecated this should be passed in via the {@link RecursiveParserWrapperHandler}
@@ -234,7 +234,7 @@ public class RecursiveParserWrapper extends ParserDecorator {
             getWrappedParser().parse(tis, secureContentHandler, metadata, context);
         } catch (SAXException e) {
             boolean wlr = isWriteLimitReached(e);
-            if (wlr == false) {
+            if (!wlr ) {
                 throw e;
             }
             metadata.set(RecursiveParserWrapperHandler.WRITE_LIMIT_REACHED, "true");
@@ -305,9 +305,9 @@ public class RecursiveParserWrapper extends ParserDecorator {
             throw new IllegalStateException("This is deprecated; please use a RecursiveParserWrapperHandler instead");
         }
     }
-    
+
     /**
-     * Copied/modified from WriteOutContentHandler.  Couldn't make that 
+     * Copied/modified from WriteOutContentHandler.  Couldn't make that
      * static, and we need to have something that will work 
      * with exceptions thrown from both BodyContentHandler and WriteOutContentHandler
      * @param t
@@ -337,8 +337,7 @@ public class RecursiveParserWrapper extends ParserDecorator {
         return objectName;
     }
 
-    
-    private class EmbeddedParserDecorator extends ParserDecorator {
+    private final class EmbeddedParserDecorator extends ParserDecorator {
         
         private static final long serialVersionUID = 207648200464263337L;
         
@@ -387,7 +386,7 @@ public class RecursiveParserWrapper extends ParserDecorator {
                 super.parse(stream, secureContentHandler, metadata, context);
             } catch (SAXException e) {
                 boolean wlr = isWriteLimitReached(e);
-                if (wlr == true) {
+                if (wlr) {
                     metadata.add(WRITE_LIMIT_REACHED, "true");
                 } else {
                     if (catchEmbeddedExceptions) {
@@ -401,7 +400,7 @@ public class RecursiveParserWrapper extends ParserDecorator {
             } catch (TikaException e) {
                 if (context.get(ZeroByteFileException.IgnoreZeroByteFileException.class) != null
                         && e instanceof ZeroByteFileException) {
-                    //do nothing
+                    System.out.println("do nothing");
                 } else if (catchEmbeddedExceptions) {
                     ParserUtils.recordParserFailure(this, e, metadata);
                 } else {
@@ -421,7 +420,7 @@ public class RecursiveParserWrapper extends ParserDecorator {
      * This tracks the state of the parse of a single document.
      * In future versions, this will allow the RecursiveParserWrapper to be thread safe.
      */
-    private class ParserState {
+    private final class ParserState {
         private int unknownCount = 0;
         private final AbstractRecursiveParserWrapperHandler recursiveParserWrapperHandler;
         private ParserState(AbstractRecursiveParserWrapperHandler handler) {

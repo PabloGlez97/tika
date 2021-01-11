@@ -31,7 +31,6 @@ import java.util.regex.Pattern;
 import org.apache.tika.exception.TikaException;
 import org.apache.tika.mime.MediaType;
 import org.apache.tika.mime.MimeTypeException;
-import org.apache.tika.parser.ParseContext;
 import org.apache.tika.utils.XMLReaderUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -147,7 +146,7 @@ public final class ExternalParsersConfigReader implements ExternalParsersConfigR
       return types;
    }
    
-   private static Map<Pattern,String> readMetadataPatterns(Element metadataDef) {
+   private static Map<Pattern, String> readMetadataPatterns(Element metadataDef) {
       Map<Pattern, String> metadata = new HashMap<Pattern, String>();
       
       NodeList children = metadataDef.getChildNodes();

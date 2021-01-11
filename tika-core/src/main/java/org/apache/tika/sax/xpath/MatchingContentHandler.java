@@ -73,7 +73,7 @@ public class MatchingContentHandler extends ContentHandlerDecorator {
             super.endElement(uri, localName, name);
         }
         // Sometimes tagsoup returns double end tags, so the stack might
-        // be empty! TODO: Remove this when the tagsoup problem is fixed.
+        // be empty!
         if (!matchers.isEmpty()) {
             matcher = matchers.removeFirst();
         }
@@ -94,11 +94,11 @@ public class MatchingContentHandler extends ContentHandlerDecorator {
     }
 
     public void processingInstruction(String target, String data) {
-        // TODO: Support for matching processing instructions
+
     }
 
     public void skippedEntity(String name) throws SAXException {
-        // TODO: Can skipped entities refer to more than text?
+
         if (matcher.matchesText()) {
             super.skippedEntity(name);
         }

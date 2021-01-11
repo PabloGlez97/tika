@@ -34,8 +34,7 @@ public class ZeroByteFileException extends TikaException {
      * {@link org.apache.tika.parser.RecursiveParserWrapper} will
      * ignore embedded files with zero-byte length inputstreams
      */
-    public static IgnoreZeroByteFileException IGNORE_ZERO_BYTE_FILE_EXCEPTION
-            = new IgnoreZeroByteFileException();
+    public static IgnoreZeroByteFileException IGNORE_ZERO_BYTE_FILE_EXCEPTION = new IgnoreZeroByteFileException();
 
     public ZeroByteFileException(String msg) {
         super(msg);

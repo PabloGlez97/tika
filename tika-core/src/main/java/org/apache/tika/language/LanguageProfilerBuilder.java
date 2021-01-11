@@ -57,27 +57,27 @@ public class LanguageProfilerBuilder {
     private static final Logger LOG = LoggerFactory.getLogger(LanguageProfilerBuilder.class);
 
     /** The minimum length allowed for a ngram. */
-    final static int ABSOLUTE_MIN_NGRAM_LENGTH = 3; /* was 1 */
+    static final  int ABSOLUTE_MIN_NGRAM_LENGTH = 3; /* was 1 */
 
     /** The maximum length allowed for a ngram. */
-    final static int ABSOLUTE_MAX_NGRAM_LENGTH = 3; /* was 4 */
+    static final  int ABSOLUTE_MAX_NGRAM_LENGTH = 3; /* was 4 */
 
     /** The default min length of ngram */
-    final static int DEFAULT_MIN_NGRAM_LENGTH = 3;
+    static final  int DEFAULT_MIN_NGRAM_LENGTH = 3;
 
     /** The default max length of ngram */
-    final static int DEFAULT_MAX_NGRAM_LENGTH = 3;
+    static final  int DEFAULT_MAX_NGRAM_LENGTH = 3;
 
     /** The ngram profile file extension */
-    final static String FILE_EXTENSION = "ngp";
+    static final  String FILE_EXTENSION = "ngp";
 
     /** The profile max size (number of ngrams of the same size) */
-    final static int MAX_SIZE = 1000;
+    static final  int MAX_SIZE = 1000;
 
     /** separator char */
-    final static char SEPARATOR = '_';
+    static final  char SEPARATOR = '_';
     /** The String form of the separator char */
-    private final static String SEP_CHARSEQ = new String(
+    private static final String SEP_CHARSEQ = new String(
             new char[] { SEPARATOR });
 
     /** The profile's name */
@@ -109,7 +109,7 @@ public class LanguageProfilerBuilder {
      * @param maxlen is the max length of ngram sequences
      */
     public LanguageProfilerBuilder(String name, int minlen, int maxlen) {
-        // TODO: Compute the initial capacity using minlen and maxlen.
+
         this.ngrams = new HashMap<>(4000);
         this.minLength = minlen;
         this.maxLength = maxlen;
@@ -547,7 +547,7 @@ public class LanguageProfilerBuilder {
 
   
     /**
-     * Inner class that describes a NGram
+     * Inner class that describes a NGram.
      */
     static class NGramEntry implements Comparable<NGramEntry> {
 

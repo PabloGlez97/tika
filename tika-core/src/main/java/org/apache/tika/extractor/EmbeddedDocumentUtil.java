@@ -20,7 +20,7 @@ package org.apache.tika.extractor;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
-import java.util.Map;
+
 
 import org.apache.tika.config.TikaConfig;
 import org.apache.tika.detect.Detector;

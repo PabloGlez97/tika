@@ -77,7 +77,7 @@ public class DefaultParser extends CompositeParser {
         }
     }
 
-    private transient final ServiceLoader loader;
+    private final transient  ServiceLoader loader;
 
     public DefaultParser(MediaTypeRegistry registry, ServiceLoader loader,
                          Collection<Class<? extends Parser>> excludeParsers,

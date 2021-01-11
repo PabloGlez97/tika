@@ -16,7 +16,7 @@
  */
 package org.apache.tika.metadata;
 
-import org.apache.tika.metadata.Property;
+
 
 /**
  * Metadata for describing machines, such as their

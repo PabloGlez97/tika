@@ -88,8 +88,8 @@ public interface XMPDM {
     Property AUDIO_CHANNEL_TYPE = Property.internalClosedChoise(
             "xmpDM:audioChannelType", "Mono", "Stereo", "5.1", "7.1");
     /**
-     * Converter for {@link XMPDM#AUDIO_CHANNEL_TYPE}
-     * @deprecated Experimental method, will change shortly
+     * Converter for {@link XMPDM#AUDIO_CHANNEL_TYPE}.
+     * @deprecated Experimental method, will change shortly.
      */
     @Deprecated
     static class ChannelTypePropertyConverter {

@@ -132,6 +132,7 @@ public class RecursiveParserWrapperHandler extends AbstractRecursiveParserWrappe
     void addContent(ContentHandler handler, Metadata metadata) {
 
         if (handler.getClass().equals(DefaultHandler.class)){
+            System.out.println("no");
             //no-op: we can't rely on just testing for
             //empty content because DefaultHandler's toString()
             //returns e.g. "org.xml.sax.helpers.DefaultHandler@6c8b1edd"

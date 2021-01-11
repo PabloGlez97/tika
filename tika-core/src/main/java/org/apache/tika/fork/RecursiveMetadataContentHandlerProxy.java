@@ -17,7 +17,7 @@
 package org.apache.tika.fork;
 
 import org.apache.tika.metadata.Metadata;
-import org.apache.tika.sax.AbstractRecursiveParserWrapperHandler;
+
 import org.apache.tika.sax.ContentHandlerFactory;
 import org.apache.tika.sax.RecursiveParserWrapperHandler;
 import org.xml.sax.ContentHandler;

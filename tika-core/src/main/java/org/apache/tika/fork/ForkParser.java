@@ -341,7 +341,7 @@ public class ForkParser extends AbstractParser implements Closeable
         } else if (loader != null && parser == null && tikaBin != null && parserFactoryFactory != null) {
             return new ForkClient(tikaBin, parserFactoryFactory, loader, java, timeoutLimits);
         } else {
-            //TODO: make this more useful
+
             throw new IllegalStateException("Unexpected combination of state items");
         }
     }

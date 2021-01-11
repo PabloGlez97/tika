@@ -28,7 +28,7 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 /**
- * Date related utility methods and constants
+ * Date related utility methods and constants.
  */
 public class DateUtils {
 

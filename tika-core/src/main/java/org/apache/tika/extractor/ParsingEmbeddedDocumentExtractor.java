@@ -107,12 +107,12 @@ public class ParsingEmbeddedDocumentExtractor implements EmbeddedDocumentExtract
                                     new EmbeddedContentHandler(new BodyContentHandler(handler)),
                                     metadata, context);
         } catch (EncryptedDocumentException ede) {
-            // TODO: can we log a warning that we lack the password?
+
             // For now, just skip the content
         } catch (CorruptedFileException e) {
             throw new IOExceptionWithCause(e);
         } catch (TikaException e) {
-            // TODO: can we log a warning somehow?
+
             // Could not parse the entry, just skip the content
         }
 

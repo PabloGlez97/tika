@@ -20,7 +20,7 @@ import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.CharArrayWriter;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -77,7 +77,7 @@ import java.util.List;
  * @since Apache Tika 0.4, copied (partially) from Commons IO 1.4
  */
 public class IOUtils {
-    // TODO Remove this when we've finished TIKA-1706 and TIKA-1710
+
     public static final Charset UTF_8 = java.nio.charset.StandardCharsets.UTF_8;
 
     /**

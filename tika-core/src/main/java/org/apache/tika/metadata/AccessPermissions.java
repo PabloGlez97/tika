@@ -24,7 +24,7 @@ package org.apache.tika.metadata;
  */
 public interface AccessPermissions {
 
-    final static String PREFIX = "access_permission"+TikaCoreProperties.NAMESPACE_PREFIX_DELIMITER;
+    static final String PREFIX = "access_permission"+TikaCoreProperties.NAMESPACE_PREFIX_DELIMITER;
 
     /**
      * Can any modifications be made to the document

@@ -39,7 +39,7 @@ import java.sql.SQLException;
 
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.metadata.TikaCoreProperties;
-import org.apache.tika.parser.Parser;
+
 
 /**
  * Input stream with extended capabilities. The purpose of this class is
@@ -69,7 +69,7 @@ import org.apache.tika.parser.Parser;
  *
  * @since Apache Tika 0.8
  */
-public class TikaInputStream extends TaggedInputStream {
+public final class TikaInputStream extends TaggedInputStream {
 
     private static final int MAX_CONSECUTIVE_EOFS = 1000;
 

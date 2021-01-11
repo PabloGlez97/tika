@@ -28,7 +28,7 @@ import java.util.Map;
 
 /**
  * Lightweight, easily serializable class that contains enough information
- * to build a {@link ParserFactory}
+ * to build a {@link ParserFactory}.
  */
 public class ParserFactoryFactory implements Serializable {
 

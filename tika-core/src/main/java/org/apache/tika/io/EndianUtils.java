@@ -89,7 +89,7 @@ public class EndianUtils {
         if ((ch1 | ch2 | ch3 | ch4) < 0) {
             throw new BufferUnderrunException();
         }
-        return ((ch4 << 24) + (ch3 << 16) + (ch2 << 8) + (ch1 << 0)) & 0x00FFFFFFFFl;
+        return ((ch4 << 24) + (ch3 << 16) + (ch2 << 8) + (ch1 << 0)) & 0x00FFFFFFFFL;
     }
 
     /**
@@ -108,7 +108,7 @@ public class EndianUtils {
         if ((ch1 | ch2 | ch3 | ch4) < 0) {
             throw new BufferUnderrunException();
         }
-        return ((ch1 << 24) + (ch2 << 16) + (ch3 << 8) + (ch4 << 0)) & 0x00FFFFFFFFl;
+        return ((ch1 << 24) + (ch2 << 16) + (ch3 << 8) + (ch4 << 0)) & 0x00FFFFFFFFL;
     }
     /**
      * Get a LE int value from an InputStream
@@ -396,7 +396,7 @@ public class EndianUtils {
      */
     public static long getUIntLE(byte[] data, int offset) {
         long retNum = getIntLE(data, offset);
-        return retNum & 0x00FFFFFFFFl;
+        return retNum & 0x00FFFFFFFFL;
     }
 
     /**
@@ -418,7 +418,7 @@ public class EndianUtils {
      */
     public static long getUIntBE(byte[] data, int offset) {
         long retNum = getIntBE(data, offset);
-        return retNum & 0x00FFFFFFFFl;
+        return retNum & 0x00FFFFFFFFL;
     }
 
     /**
