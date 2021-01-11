@@ -117,7 +117,7 @@ class Patterns implements Serializable {
         } else if (previous == type
                 || registry.isSpecializationOf(type.getType(), previous.getType())) {
             // do nothing
-            System.out.println("no");
+            System.out.println("");
         } else {
             throw new MimeTypeException("Conflicting name pattern: " + name);
         }
@@ -134,7 +134,7 @@ class Patterns implements Serializable {
             maxExtensionLength = Math.max(maxExtensionLength, length);
         } else if (previous == type
                 || registry.isSpecializationOf(type.getType(), previous.getType())) {
-            System.out.println("no");
+            System.out.println("");
             // do nothing
         } else {
             throw new MimeTypeException(
@@ -150,7 +150,7 @@ class Patterns implements Serializable {
             globs.put(glob, type);
         } else if (previous == type
                 || registry.isSpecializationOf(type.getType(), previous.getType())) {
-            System.out.println("no");
+            System.out.println("");
             // do nothing
         } else {
             throw new MimeTypeException("Conflicting glob pattern: " + glob);

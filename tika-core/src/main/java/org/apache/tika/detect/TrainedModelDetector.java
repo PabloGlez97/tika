@@ -133,7 +133,7 @@ public abstract class TrainedModelDetector implements Detector {
 
             return histogram;
         } finally {
-            System.out.println("no");
+            System.out.println("");
             // inputChannel.close();
         }
     }

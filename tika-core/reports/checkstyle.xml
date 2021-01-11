@@ -1,11 +1,543 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.29">
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\concurrent\ConfigurableThreadPoolExecutor.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\concurrent\SimpleThreadPoolExecutor.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\Field.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\Initializable.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\InitializableProblemHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\LoadErrorHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\Param.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\ParamField.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\ServiceLoader.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\TikaActivator.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\TikaConfig.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\config\TikaConfigSerializer.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\AutoDetectReader.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\CompositeDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\CompositeEncodingDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\DefaultDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\DefaultEncodingDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\DefaultProbDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\Detector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\EmptyDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\EncodingDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\FileCommandDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\MagicDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\NameDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\NNExampleModelDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\NNTrainedModel.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\NNTrainedModelBuilder.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\NonDetectingEncodingDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\OverrideDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\TextDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\TextStatistics.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\TrainedModel.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\TrainedModelDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\TypeDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\XmlRootExtractor.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\detect\ZeroSizeFileDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\embedder\Embedder.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\embedder\ExternalEmbedder.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\exception\AccessPermissionException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\exception\CorruptedFileException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\exception\EncryptedDocumentException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\exception\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\exception\TikaConfigException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\exception\TikaException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\exception\TikaMemoryLimitException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\exception\UnsupportedFormatException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\exception\ZeroByteFileException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\extractor\ContainerExtractor.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\extractor\DocumentSelector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\extractor\EmbeddedDocumentExtractor.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\extractor\EmbeddedDocumentUtil.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\extractor\EmbeddedResourceHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\extractor\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\extractor\ParserContainerExtractor.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\extractor\ParsingEmbeddedDocumentExtractor.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ClassLoaderProxy.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ClassLoaderResource.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ContentHandlerProxy.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ContentHandlerResource.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ForkClient.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ForkObjectInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ForkParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ForkProxy.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ForkResource.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ForkServer.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\InputStreamProxy.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\InputStreamResource.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\MemoryURLConnection.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\MemoryURLStreamHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\MemoryURLStreamHandlerFactory.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\MemoryURLStreamRecord.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\MetadataContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\ParserFactoryFactory.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\RecursiveMetadataContentHandlerProxy.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\RecursiveMetadataContentHandlerResource.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\fork\TimeoutLimits.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\BoundedInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\ClosedInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\CloseShieldInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\CountingInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\EndianUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\FilenameUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\InputStreamFactory.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\IOExceptionWithCause.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\IOUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\LookaheadInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\MappedBufferCleaner.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\NullInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\NullOutputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\ProxyInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\TaggedInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\TaggedIOException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\TailStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\TemporaryResources.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\io\TikaInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\detect\LanguageConfidence.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\detect\LanguageDetector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\detect\LanguageHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\detect\LanguageNames.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\detect\LanguageResult.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\detect\LanguageWriter.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\LanguageIdentifier.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\LanguageProfile.java">
+</file>
 <file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\LanguageProfilerBuilder.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\ProfilingHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\ProfilingWriter.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\translate\DefaultTranslator.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\translate\EmptyTranslator.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\language\translate\Translator.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\AccessPermissions.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\ClimateForcast.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\CreativeCommons.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\Database.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\DublinCore.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\filter\ClearByMimeMetadataFilter.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\filter\CompositeMetadataFilter.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\filter\DefaultMetadataFilter.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\filter\ExcludeFieldMetadataFilter.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\filter\IncludeFieldMetadataFilter.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\filter\MetadataFilter.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\filter\NoOpFilter.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\Font.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\Geographic.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\HTML.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\HttpHeaders.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\IPTC.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\MachineMetadata.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\Message.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\Metadata.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\Office.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\OfficeOpenXMLCore.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\OfficeOpenXMLExtended.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\PagedText.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\PDF.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\Photoshop.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\Property.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\PropertyTypeException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\QuattroPro.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\RTFMetadata.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\TIFF.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\TikaCoreProperties.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\TikaMimeKeys.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\WordPerfect.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\XMP.java">
 </file>
 <file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\XMPDM.java">
 </file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\XMPIdq.java">
+</file>
 <file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\XMPMM.java">
 </file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\metadata\XMPRights.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\AndClause.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\Clause.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\HexCoDec.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\Magic.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MagicMatch.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MediaType.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MediaTypeRegistry.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MimeType.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MimeTypeException.java">
+</file>
 <file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MimeTypes.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MimeTypesFactory.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MimeTypesReader.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MimeTypesReaderMetKeys.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\MinShouldMatchClause.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\OrClause.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\Patterns.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\mime\ProbabilisticMimeDetectionSelector.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\AbstractEncodingDetectorParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\AbstractParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\AutoDetectParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\AutoDetectParserFactory.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\CompositeParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\CryptoParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\DefaultParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\DelegatingParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\digest\CompositeDigester.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\digest\InputStreamDigester.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\DigestingParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\EmptyParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\ErrorParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\external\CompositeExternalParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\external\ExternalParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\external\ExternalParsersConfigReader.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\external\ExternalParsersConfigReaderMetKeys.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\external\ExternalParsersFactory.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\external\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\multiple\AbstractMultipleParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\multiple\FallbackParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\multiple\SupplementingParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\NetworkParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\ParseContext.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\Parser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\ParserDecorator.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\ParserFactory.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\ParserPostProcessor.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\ParsingReader.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\PasswordProvider.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\parser\RecursiveParserWrapper.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\AbstractRecursiveParserWrapperHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\BasicContentHandlerFactory.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\BodyContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\CleanPhoneText.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\ContentHandlerDecorator.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\ContentHandlerFactory.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\DIFContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\ElementMappingContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\EmbeddedContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\EndDocumentShieldingContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\ExpandedTitleContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\Link.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\LinkBuilder.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\LinkContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\OfflineContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\PhoneExtractingContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\RecursiveParserWrapperHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\RichTextContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\SafeContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\SecureContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\StandardOrganizations.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\StandardReference.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\StandardsExtractingContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\StandardsText.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\StoppingEarlyException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\TaggedContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\TaggedSAXException.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\TeeContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\TextContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\ToHTMLContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\ToTextContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\ToXMLContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\WriteOutContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\XHTMLContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\XMPContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\AttributeMatcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\ChildMatcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\CompositeMatcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\ElementMatcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\Matcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\MatchingContentHandler.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\NamedAttributeMatcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\NamedElementMatcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\NodeMatcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\SubtreeMatcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\TextMatcher.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\sax\xpath\XPathParser.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\Tika.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\AnnotationUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\CharsetUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\ConcurrentUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\DateUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\ExceptionUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\package-info.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\ParserUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\ProcessUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\RegexUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\RereadableInputStream.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\ServiceLoaderUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\StringUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\SystemUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\java\org\apache\tika\utils\XMLReaderUtils.java">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\main\resources\org\apache\tika\language\tika.language.properties">
+</file>
+<file name="C:\Users\Pablo\Desktop\Tika\tika\tika-core\src\test\resources\log4j.properties">
 </file>
 </checkstyle>

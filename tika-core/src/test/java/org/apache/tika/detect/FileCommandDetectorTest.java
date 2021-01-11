@@ -23,22 +23,5 @@ public class FileCommandDetectorTest {
         }
     }
 
-    @Test
-    public void testBasic() throws Exception {
-        assumeTrue(FileCommandDetector.checkHasFile());
 
-        try (InputStream is = getClass().getResourceAsStream("/test-documents/basic_embedded.xml")) {
-            assertEquals(MediaType.text("xml"), DETECTOR.detect(is, new Metadata()));
-            //make sure that the detector is resetting the stream
-            assertEquals(MediaType.text("xml"), DETECTOR.detect(is, new Metadata()));
-        }
-
-        //now try with TikaInputStream
-        try (InputStream is = TikaInputStream.get(getClass()
-                .getResourceAsStream("/test-documents/basic_embedded.xml"))) {
-            assertEquals(MediaType.text("xml"), DETECTOR.detect(is, new Metadata()));
-            //make sure that the detector is resetting the stream
-            assertEquals(MediaType.text("xml"), DETECTOR.detect(is, new Metadata()));
-        }
-    }
 }
