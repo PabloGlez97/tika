@@ -6,7 +6,7 @@ import org.apache.tika.metadata.Metadata;
 public class ExtractorTest {
 
     public void test() {
-        Metadata m = n
+
     }
 
 

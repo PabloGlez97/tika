@@ -5,4 +5,4 @@ script: mvn -pl tika-core clean test jacoco:report checkstyle:check
 
 env:
   global:
-    - CODECOV_TOKEN="12373424-c589-461c-b22a-ff5bfc10459c"
+    - CODECOV_TOKEN=12373424-c589-461c-b22a-ff5bfc10459c
